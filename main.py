@@ -1,16 +1,15 @@
-# This is a sample Python script.
+count = 3
+max_son = None
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+while True:
+    son = int(input("Son kiriting (to'xtash uchun 0): "))
 
+    if son == 0:
+        break
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    if max_son is None or son > max_son:
+        max_son = son
 
+    count += 1
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("Eng katta son:", max_son)
